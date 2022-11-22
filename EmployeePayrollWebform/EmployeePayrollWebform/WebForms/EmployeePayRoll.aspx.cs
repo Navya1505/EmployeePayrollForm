@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Reflection.Emit;
 
 namespace EmployeePayrollWebform.WebForms
 {
@@ -83,6 +84,7 @@ namespace EmployeePayrollWebform.WebForms
             com.Parameters.AddWithValue("@Department", checklist);
             com.Parameters.AddWithValue("@Salary", DropDownList1.SelectedValue);
             com.Parameters.AddWithValue("@StartDate", ddlDay.SelectedValue + '-' + ddlMonth.SelectedValue + '-' + ddlYear.SelectedValue);
+            com.Parameters.AddWithValue("@Notes", TextBox1.Text);
             con.Open();
             var datareader = com.ExecuteReader();
             if (datareader != null)
@@ -92,7 +94,8 @@ namespace EmployeePayrollWebform.WebForms
             }
             else
             {
-                Response.Redirect("Error.aspx");
+                Label8.Text = "!!! Details are not inserted into the database !!!";
+                Label8.ForeColor = System.Drawing.Color.Red;
             }
             con.Close();
         }

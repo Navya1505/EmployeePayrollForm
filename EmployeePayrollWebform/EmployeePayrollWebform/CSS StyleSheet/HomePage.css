@@ -2,3 +2,10 @@
     width: 20px;
     height: 20px
 }
+
+input[type=submit] {
+    float: right;
+    background: #4cff00;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}

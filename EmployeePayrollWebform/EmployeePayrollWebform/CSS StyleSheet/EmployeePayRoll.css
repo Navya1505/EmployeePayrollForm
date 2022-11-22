@@ -6,6 +6,8 @@
     padding-left: 90px;
     padding-top: 20px;
     width: 1046px;
+    border: 2px solid;
+    background-color:aquamarine;
 }
 
 .Header {
@@ -35,4 +37,8 @@ footer {
 .abd input[type=checkbox] {
     margin-left: 25px;
     margin-right: 8px;
+}
+
+div{
+    padding-bottom: 10px;
 }

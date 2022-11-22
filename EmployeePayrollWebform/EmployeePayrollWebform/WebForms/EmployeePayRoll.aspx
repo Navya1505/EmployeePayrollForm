@@ -45,7 +45,7 @@
     </div>
     <div>
          <asp:Label ID="Label5" runat="server" Text="Salary"></asp:Label>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 
+            &emsp;&emsp;&emsp; 
         
             <asp:DropDownList ID="DropDownList1" required="required" runat="server" Width="250px" Height="36px" ToolTip="Please Select Your Current Salary" >
                 <asp:ListItem>Select Salary</asp:ListItem>
@@ -79,6 +79,9 @@
              <asp:Button ID="Button2" runat="server" class="btn btn-outline-Sucess" Text="Submit" Width="151px"   OnClick="Button2_Click" Height="44px"  />&emsp;
             <asp:Button ID="Button3" runat="server" class="btn btn-outline-secondary" Text="Reset" Width="185px" Height="62px" style="margin-left: 71px; margin-top: 48px;" />
     </div>
+         <div>
+            <asp:Label ID="Label8" runat="server"></asp:Label>
+        </div>
         </div>
     
 </asp:Content>
